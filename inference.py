@@ -16,7 +16,7 @@ def get_val_transforms(cfg):
         ToTensorV2(),
     ])
 
-def predict_test(cfg, threshold=0.610):
+def predict_test(cfg, threshold=0.520):
     test_meta = pd.read_csv(cfg.input_dir / "Test/test_metadata.csv")
     eval_ds = LunarDataset(test_meta, cfg.work_dir / "norm_eval", cfg, transform=get_val_transforms(cfg))
     eval_loader = DataLoader(eval_ds, batch_size=cfg.batch_size * 2, shuffle=False, num_workers=cfg.num_workers)
