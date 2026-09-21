@@ -39,6 +39,6 @@ python inference.py
 
 ## Model Weights
 The pre-trained weights for the 5-fold ensemble can be downloaded here:
-**[INSERT_LINK_HERE]** 
+**https://drive.google.com/file/d/12__1olwQ3HOfmKlDP5cpm_c8lA2xa58a/view?usp=drive_link** 
 
 *(Make sure to place the downloaded `.pt` files in the `working/checkpoints/` directory before running inference).*
